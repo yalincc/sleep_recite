@@ -59,3 +59,8 @@ test_data.json
 # Android gradle build output
 /android/build/
 
+
+# 开发文档仅本地保留，不同步公开仓库（README.md 除外）
+*.md
+!README.md
+
