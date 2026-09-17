@@ -1,0 +1,36 @@
+name: sleep_recite
+description: "睡背APP：睡前听背诵课本内容。文字转温柔女声，定时或循环播放。"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # 免费在线语音合成（微软 Edge 神经音色，无需 Key）
+  edge_tts: ^0.1.5
+  # 本地音频播放（循环、定时、音量渐弱）
+  just_audio: ^0.10.6
+  # 后台播放：息屏/锁屏继续播放 + 媒体通知 + 锁屏控制（前台服务）
+  just_audio_background: ^0.0.1-beta.17
+  # 跳转系统设置页（电池优化豁免 / 应用信息 / 小米自启动）
+  android_intent_plus: ^6.0.0
+  # 备份：分享 JSON 文件 / 选择导入文件
+  share_plus: ^11.0.0
+  file_picker: ^10.0.0
+  # 获取应用文档目录（存放生成音频）
+  path_provider: ^2.1.5
+  # 音频文件名 hash
+  crypto: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
